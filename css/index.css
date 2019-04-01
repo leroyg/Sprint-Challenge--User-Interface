@@ -220,6 +220,8 @@ p {
     justify-content: space-evenly;
     width: 100%;
     border: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .middle-content .boxes .box {
