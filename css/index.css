@@ -218,6 +218,8 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 100%;
+    border: none;
 }
 
 .middle-content .boxes .box {
@@ -330,39 +332,45 @@ footer nav a {
     width: 800px;
     padding: 0px 0px 0px 0px;
 }
+
 .boxes {
     width: 340px;
     margin: 0px 5% 0px 2%;
     padding: 4% 0% 4% 0%;
     border-bottom: 1px dashed;
 }
-h3.boxes-header{
+
+h3.boxes-header {
     font-size: 18px;
     margin: 15px 0px 20px 0px;
 }
-a.boxes-button{
-    border:1px solid black;
+
+a.boxes-button {
+    border: 1px solid black;
     border-radius: 5px;
     text-decoration: none;
     color: black;
     font-size: 15px;
     padding: 5px 10px 5px 10px;
 }
-p.boxes-text{
+
+p.boxes-text {
     margin: 25px 0px;
 }
 
-#bottom-box1 #bottom-box2{
+#bottom-box1 #bottom-box2 {
     margin: 1px 1px 1px 1px;
 }
 
-img.boxes-images{
+img.boxes-images {
     max-width: 100%;
 }
-.about-bottom-content{
+
+.about-bottom-content {
     width: 800px;
     padding: 0% 0% 5% 2%;
 }
+
 h3.about-bottom {
     margin-top: 4%;
 }
