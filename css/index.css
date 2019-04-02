@@ -3,60 +3,152 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
@@ -71,18 +163,45 @@ p {
     margin: 0 auto;
 }
 
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navigation {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 25px 25px 25px 0px;
+    justify-content: space-between;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #202020;
+    display: flex;
+}
+
+.imageHeader {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    justify-items: center;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin: 20px 0px;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -99,6 +218,10 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 100%;
+    border: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .middle-content .boxes .box {
@@ -110,6 +233,46 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#box1 {
+    background-color: teal;
+}
+
+#box2 {
+    background-color: gold;
+}
+
+#box3 {
+    background-color: cadetblue;
+}
+
+#box4 {
+    background-color: coral;
+}
+
+#box5 {
+    background-color: crimson;
+}
+
+#box6 {
+    background-color: forestgreen;
+}
+
+#box7 {
+    background-color: darkorchid;
+}
+
+#box8 {
+    background-color: hotpink;
+}
+
+#box9 {
+    background-color: indigo;
+}
+
+#box10 {
+    background-color: dodgerblue;
 }
 
 .bottom-content {
@@ -143,4 +306,73 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/** Index specific and header/footer css above **/
+.header-about {
+    margin: 0px 0px 25px 0px;
+}
+
+.about-top-content {
+    margin: 0px 0px 25px 0px;
+    border-bottom: 1px dashed;
+    padding: 0px 0px 25px 0px;
+    text-align: justify;
+}
+
+.about-header {
+    font-size: 18px;
+}
+
+.about-paragraph {
+    width: 90%;
+}
+
+.all-boxes {
+    display: flex;
+    flex-flow: row wrap;
+    width: 800px;
+    padding: 0px 0px 0px 0px;
+}
+
+.boxes {
+    width: 340px;
+    margin: 0px 5% 0px 2%;
+    padding: 4% 0% 4% 0%;
+    border-bottom: 1px dashed;
+}
+
+h3.boxes-header {
+    font-size: 18px;
+    margin: 15px 0px 20px 0px;
+}
+
+a.boxes-button {
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+}
+
+p.boxes-text {
+    margin: 25px 0px;
+}
+
+#bottom-box1 #bottom-box2 {
+    margin: 1px 1px 1px 1px;
+}
+
+img.boxes-images {
+    max-width: 100%;
+}
+
+.about-bottom-content {
+    width: 800px;
+    padding: 0% 0% 5% 2%;
+}
+
+h3.about-bottom {
+    margin-top: 4%;
 }
